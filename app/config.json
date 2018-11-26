@@ -1,0 +1,6 @@
+{
+    "host": "localhost",
+    "user": "root",
+    "database": "software_products_library",
+    "http-server-port": "3000"
+}

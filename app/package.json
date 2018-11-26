@@ -1,0 +1,17 @@
+{
+  "name": "server_software_products_libriary",
+  "version": "0.1.0",
+  "description": "",
+  "main": "server_starter.bat",
+  "scripts": {
+    "start": "server_starter.bat"
+  },
+  "author": "Ложкин Дмитрий",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "promise-mysql": "^3.1.3",
+    "prompt-password": "^1.2.0",
+    "ws": "^3.3.3"
+  }
+}

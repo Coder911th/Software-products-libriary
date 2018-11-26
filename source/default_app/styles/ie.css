@@ -1,0 +1,58 @@
+@media screen and (min-width:0\0) {
+
+    #add-software-page ul {
+        height: 100% !important;
+    }
+
+    #show-software .wrap {
+        height: 100%;
+    }
+
+    #show-software {
+        margin-bottom: 30px;
+    }
+
+    .grid-item {
+        -ms-grid-column: 2;
+    }
+
+    .grid-item.first-col {
+        -ms-grid-column: 1;
+    }
+
+    #item-name, .row-1 {
+        -ms-grid-row: 1;
+    }
+
+    #item-category, .row-2 {
+        -ms-grid-row: 2;
+    }
+
+    #item-developer, .row-3 {
+        -ms-grid-row: 3;
+    }
+
+    #item-os, .row-4 {
+        -ms-grid-row: 4;
+    }
+
+    #item-cpu, .row-5 {
+        -ms-grid-row: 5;
+    }
+
+    #item-gpu, .row-6 {
+        -ms-grid-row: 6;
+    }
+
+    #item-ram, .row-7 {
+        -ms-grid-row: 7;
+    }
+
+    #item-rom, .row-8 {
+        -ms-grid-row: 8;
+    }
+
+    #item-price, .row-9 {
+        -ms-grid-row: 9;
+    }
+}

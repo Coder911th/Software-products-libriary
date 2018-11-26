@@ -1,0 +1,76 @@
+datalist#data-category
+datalist#data-developer
+datalist#data-OS
+datalist#data-CPU
+datalist#data-GPU
+.App
+    button#back.hidden(type = "button") BACK
+    form#filters
+        ul
+            li.title Search
+            li #[span Name] #[input#find-name]
+            li #[span Category] #[input#find-category(list = 'data-category')]
+            li #[span Developer] #[input#find-developer(list = 'data-developer')]
+            li #[span Price] #[input#find-min-price.mini(pattern = "^(\\s)*\\d+?(\\.\\d+)??(\\s)*$")]#[span -]#[input#find-max-price.mini(pattern = "^(\\s)*\\d+?(\\.\\d+)??(\\s)*$")]#[span $]
+            li.tech System requirements
+            li #[span OS] #[input#find-os(list = 'data-OS')]
+            li #[span CPU] #[input#find-cpu(list = 'data-CPU')]
+            li #[span GPU] #[input#find-gpu(list = 'data-GPU')]
+            li #[span RAM] #[input#find-min-ram.mini(pattern = "^(\\s)*\\d+?(\\.\\d+)??(\\s)*$")]#[span -]#[input#find-max-ram.mini(pattern = "^(\\s)*\\d+?(\\.\\d+)??(\\s)*$")]#[span MB]
+            li #[span ROM] #[input#find-min-rom.mini(pattern = "^(\\s)*\\d+?(\\.\\d+)??(\\s)*$")]#[span -]#[input#find-max-rom.mini(pattern = "^(\\s)*\\d+?(\\.\\d+)??(\\s)*$")]#[span MB]
+            li.buttons #[button#find(type = "button") FIND] #[button#find-reset(type = "button") RESET] #[button#add-software(type = "button") ADD SOFTWARE]
+    #software-list
+        ul
+            li.title Software list
+    form#add-software-page.hidden
+        ul
+            li.title Addition a new software to the database
+            li #[span Name] #[input#add-software-name.maxi(maxlength = 45, required)]
+            li #[span Category] #[input#add-software-category.maxi(list = 'data-category', maxlength = 45, required)]
+            li #[span Developer] #[input#add-software-developer.maxi(list = 'data-developer', maxlength = 60, required)]
+            li.row
+                div #[span Price] #[input#add-software-price.dollar.mini(required, pattern = "^(\\s)*\\d+?(\\.\\d+)??(\\s)*$")]#[span.inset $]  
+                div #[span RAM]  #[input#add-software-ram.mb.mini(required, pattern = "^(\\s)*\\d+?(\\.\\d+)??(\\s)*$")]#[span.inset MB]
+                div #[span ROM]  #[input#add-software-rom.mb.mini(required, pattern = "^(\\s)*\\d+?(\\.\\d+)??(\\s)*$")]#[span.inset MB]
+            li #[span OS] #[input#add-software-os.middle(list = 'data-OS', maxlength = 45)] #[button.add(type = "button") ADD]
+            li#OS
+            li #[span CPU] #[input#add-software-cpu.middle(list = 'data-CPU', maxlength = 45)] #[button.add(type = "button") ADD]
+            li#CPU
+            li #[span GPU] #[input#add-software-gpu.middle(list = 'data-GPU', maxlength = 45)]#[button.add(type = "button") ADD]
+            li#GPU
+            li.buttons #[button#add-soft(type = "button") ADD SOFTWARE TO THE DATABASE] #[button#reset-add-software(type = "button") RESET]
+    #show-software.hidden
+        .wrap
+            .title System requirements
+            .grid
+                .grid-item.first-col.row-1 Name
+                .grid-item#item-name 
+                .grid-item.first-col.row-2 Category
+                .grid-item#item-category 
+                .grid-item.first-col.row-3 Developer
+                .grid-item#item-developer 
+                .grid-item.first-col.row-4 OS
+                .grid-item#item-os 
+                .grid-item.first-col.row-5 CPU
+                .grid-item#item-cpu 
+                .grid-item.first-col.row-6 GPU
+                .grid-item#item-gpu 
+                .grid-item.first-col.row-7 RAM
+                .grid-item#item-ram 
+                .grid-item.first-col.row-8 ROM
+                .grid-item#item-rom 
+                .grid-item.first-col.row-9 Price
+                .grid-item#item-price
+    #waiting-for-response.hidden
+        .peeek-loading
+          ul
+            li
+            li
+            li
+            li
+            li
+            li
+            li
+            li
+            li
+            li
